@@ -6,3 +6,10 @@
   makeChocolate(4, 1, 10) → -1
   makeChocolate(4, 1, 7) → 2
 */
+public int makeChocolate(int small, int big, int goal) {
+  int a= goal-5*Math.min(big,goal/5);
+  if(a<=small)
+    return a;
+  return -1;
+}
+
